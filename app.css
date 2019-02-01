@@ -1,4 +1,162 @@
-body {
-    background-color:red;
-    color:#fff;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, iframe {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+input, textarea, select {
+  font: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Maison Mono";
+  src: url(fonts/MaisonMono-Regular.woff);
+}
+@font-face {
+  font-family: Trade Gothic;
+  src: url(fonts/TradeGothic-Bold.woff);
+}
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Maison Mono";
+  line-height: 1.5;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =========== Header =========== */
+header {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: #000;
+  padding-left: 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  will-change: transform;
+  height: 90px;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 1s 0.2s;
+}
+header a.social {
+  color: #000;
+}
+header a h1 img.logo {
+  width: 120px;
+  position: fixed;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+}
+header div.menu-area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: 90px;
+}
+header div.menu-ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  will-change: transform;
+  transform: translate(-50%, -50%);
+}
+header div.burger {
+  height: 2px;
+  width: 28px;
+  background-color: #000000;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transition: all 0.3s 0.2s;
+  -o-transition: all 0.3s 0.2s;
+  transition: all 0.3s 0.2s;
+}
+header div.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  height: 18px;
+  justify-content: space-between;
+  will-change: transform;
+  padding: 5px 0;
+  transition: transform 0.5s;
+  cursor: pointer;
+  z-index: 99;
+  align-items: flex-end;
+}
+
+header.animated {
+  transform: translate3d(0, 0%, 0);
+}
+
+/*# sourceMappingURL=app.css.map */

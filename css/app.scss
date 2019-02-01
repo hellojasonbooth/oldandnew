@@ -1,0 +1,121 @@
+@import "reset";
+@import "typography";
+
+
+$primary-color: #000;
+$white-color: #fff;
+$grey-color: #999999;
+$orange-color: #000;
+
+$body-font: "Maison Mono";
+$title-font: "Trade Gothic";
+$body-size: 24px;
+$link-size: 15px;
+$uppercase: uppercase;
+
+
+
+
+body {
+    background-color: $white-color;
+    color: $primary-color;
+    font-family: $body-font;
+    line-height: 1.5;
+    font-size: $body-size;
+    text-transform: $uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* =========== Header =========== */
+
+header {
+    display: flex;
+    align-items: center;
+    font-size: $link-size;
+    color: $primary-color;
+    padding-left: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    will-change: transform;
+    height: 90px;
+    transform: translate3d(0, -100%, 0);
+    transition: transform 1s 0.2s;
+
+    a.social {
+        color: $primary-color;  
+    }
+
+    a h1 img.logo {
+        width: 120px;
+        position: fixed;
+        left: 50%;
+        top: 30px;
+        transform: translateX(-50%);
+    }
+
+
+    div.menu-area {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 90px;
+        width: 90px;
+      }
+      
+      div.menu-ball {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: $white-color;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        will-change: transform;
+        transform: translate(-50%, -50%);
+      }
+
+
+      div.burger {
+        height: 2px;
+        width: 28px;
+        background-color: #000000;
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transition: all 0.3s 0.2s;
+        -o-transition: all 0.3s 0.2s;
+        transition: all 0.3s 0.2s;
+      }
+      
+      div.nav-toggle {
+        display: flex;
+        flex-direction: column;
+        height: 18px;
+        justify-content: space-between;
+        will-change: transform;
+        padding: 5px 0;
+        transition: transform 0.5s;
+        cursor: pointer;
+        z-index: 99;
+        align-items: flex-end;
+      }
+
+}
+
+header.animated {
+	transform: translate3d(0, 0%, 0);
+}
+
+
+
+
+
