@@ -13,6 +13,22 @@ $body-size: 24px;
 $link-size: 15px;
 $uppercase: uppercase;
 
+$mq-xlarge: 1000px;
+$mq-large: 800px;
+$mq-medium: 600px;
+$mq-small: 400px;
+
+
+@mixin drop-shadow() {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+@mixin mq($width) {
+    @media (max-width: $width) {
+        @content;
+    }
+}
+
 
 
 
@@ -23,6 +39,14 @@ body {
     line-height: 1.5;
     font-size: $body-size;
     text-transform: $uppercase;
+
+    // @include mq($mq-medium) {
+    //     background-color: yellow;
+    // }
+
+    // @include mq($mq-small) {
+    //     background-color: #000;
+    // }
 }
 
 a {
@@ -49,8 +73,15 @@ header {
     transform: translate3d(0, -100%, 0);
     transition: transform 1s 0.2s;
 
+    // @include drop-shadow();
+
     a.social {
         color: $primary-color;  
+
+        @include mq($mq-small) {
+            display: none;
+          }
+
     }
 
     a h1 img.logo {
@@ -59,6 +90,13 @@ header {
         left: 50%;
         top: 30px;
         transform: translateX(-50%);
+
+        @include mq($mq-small) {
+          left: 30px;
+          transform: translateX(0);
+        }
+
+
     }
 
 
@@ -108,6 +146,11 @@ header {
         z-index: 99;
         align-items: flex-end;
       }
+
+
+    
+
+
 
 }
 

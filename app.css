@@ -105,12 +105,23 @@ header {
 header a.social {
   color: #000;
 }
+@media (max-width: 400px) {
+  header a.social {
+    display: none;
+  }
+}
 header a h1 img.logo {
   width: 120px;
   position: fixed;
   left: 50%;
   top: 30px;
   transform: translateX(-50%);
+}
+@media (max-width: 400px) {
+  header a h1 img.logo {
+    left: 30px;
+    transform: translateX(0);
+  }
 }
 header div.menu-area {
   position: fixed;
