@@ -19,9 +19,9 @@ $mq-medium: 600px;
 $mq-small: 500px;
 
 
-@mixin drop-shadow() {
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
-}
+// @mixin drop-shadow() {
+//     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+// }
 
 @mixin mq($width) {
     @media (max-width: $width) {
@@ -97,7 +97,6 @@ header {
           transform: translateX(0);
         }
 
-
     }
 
 
@@ -148,11 +147,6 @@ header {
         align-items: flex-end;
       }
 
-
-    
-
-
-
 }
 
 header.animated {
@@ -162,4 +156,62 @@ header.animated {
 
 
 
+/* =========== Menu =========== */
 
+div.menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $orange-color;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    will-change: transform;
+    transform: translateY(-100%);
+    transition: transform 0.6s 0.2s cubic-bezier(.72,0,.01,1);
+
+    a {
+        text-align: center;
+        color: $primary-color;
+        font-size: 20px;
+    }
+
+    .menu-container {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        position: relative;
+    }
+
+    .nav-item {
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    .nav-area--wrap {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  
+  div.menu.open {
+    transform: translateY(0);
+  }
+  

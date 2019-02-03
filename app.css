@@ -152,3 +152,50 @@ header {
 
 header.animated {
   transform: translate3d(0, 0%, 0); }
+
+/* =========== Menu =========== */
+div.menu {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fc3e17;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+  transform: translateY(-100%);
+  transition: transform 0.6s 0.2s cubic-bezier(0.72, 0, 0.01, 1); }
+  div.menu a {
+    text-align: center;
+    color: black;
+    font-size: 20px; }
+  div.menu .menu-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative; }
+  div.menu .nav-item {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: none; }
+  div.menu .nav-area--wrap {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+div.menu.open {
+  transform: translateY(0); }
