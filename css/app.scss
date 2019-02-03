@@ -10,7 +10,7 @@ $orange-color: #fc3e17;
 $body-font: "Maison Mono";
 $title-font: "Trade Gothic";
 $body-size: 16px;
-$link-size: 15px;
+$link-size: 14px;
 $uppercase: uppercase;
 
 $mq-xlarge: 1000px;
@@ -39,18 +39,19 @@ body {
     line-height: 1.5;
     font-size: $body-size;
 
-    @include mq($mq-medium) {
-        background-color: yellow;
-    }
+    // @include mq($mq-medium) {
+    //     background-color: yellow;
+    // }
 
-    @include mq($mq-small) {
-        background-color: #000;
-    }
+    // @include mq($mq-small) {
+    //     background-color: #000;
+    // }
 }
 
 a {
     text-decoration: none;
 }
+
 
 
 
@@ -75,12 +76,13 @@ header {
     // @include drop-shadow();
 
     a.social {
-        color: $primary-color;  
+        color: $primary-color; 
+        text-transform: $uppercase; 
 
-        @include mq($mq-small) {
-            left: 30px;
-            transform: translateX(0);
-          }
+        // @include mq($mq-small) {
+        //     left: 30px;
+        //     transform: translateX(0);
+        //   }
 
     }
 
@@ -91,10 +93,10 @@ header {
         top: 30px;
         transform: translateX(-50%);
 
-        @include mq($mq-small) {
-          left: 30px;
-          transform: translateX(0);
-        }
+        // @include mq($mq-small) {
+        //   left: 30px;
+        //   transform: translateX(0);
+        // }
 
     }
 
@@ -217,7 +219,48 @@ div.menu {
   div.menu.open {
     transform: translateY(0);
   }
+
+
+
+
+
+  /* =========== footer =========== */
   
+footer {
+    height: 100vh;
+    width: 100%;
+    background-color: $primary-color;
+    position: relative;
+    font-size: $link-size;
+    color: $grey-color;
+
+    div.footer-wrap {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 30px 30px 30px;
+
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $grey-color;
+        }
+
+
+        div {
+            width: 50%;
+        }
+
+        div.credit {
+            text-align: right;
+        }
+    }
+
+}
+
+
 
 
 
@@ -225,6 +268,7 @@ div.menu {
 
   header a.social-about {
       color: $white-color;
+      text-transform: $uppercase;
   }
 
 
@@ -234,13 +278,13 @@ div.menu {
   }
 
   section.profile-hero {
-      height: 100vh;
+      min-height: 100vh;
       width:100%;
       background-color: $primary-color;
   }
 
   section.hero-title {
-    height: 100vh;
+    height: 100%;
     margin-top: -44%;
 
         h1 {
@@ -251,22 +295,50 @@ div.menu {
 
   }
 
-  section.profile-content {
+  section.profile {
       display: flex;
+      align-items: center;
+      min-height: 100vh;
 
 
-      p {
-          width: 50%;
-          float: right;
-      }
 
-      div {
-          width: 50%;
-      }
+        p:nth-child(1) {
+            margin-bottom: 16px;
+        }
 
-      div img {
-        width: 300px;
-      }
+        .profile-content {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        div.content {
+            width: 50%;
+            margin-left: 50%;
+        }
+
+
+        div.parallax-img {
+            width: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(8deg);
+        }
+
+        div.parallax-img img {
+            width: 300px;
+        }
+
+        div.dot {
+            width: 80px;
+            height: 80px;
+            background-color: $orange-color;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
   }
 
 

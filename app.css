@@ -68,12 +68,6 @@ body {
   font-family: "Maison Mono";
   line-height: 1.5;
   font-size: 16px; }
-  @media (max-width: 600px) {
-    body {
-      background-color: yellow; } }
-  @media (max-width: 500px) {
-    body {
-      background-color: #000; } }
 
 a {
   text-decoration: none; }
@@ -82,7 +76,7 @@ a {
 header {
   display: flex;
   align-items: center;
-  font-size: 15px;
+  font-size: 14px;
   color: black;
   padding-left: 30px;
   width: 100%;
@@ -95,21 +89,14 @@ header {
   transform: translate3d(0, -100%, 0);
   transition: transform 1s 0.2s; }
   header a.social {
-    color: black; }
-    @media (max-width: 500px) {
-      header a.social {
-        left: 30px;
-        transform: translateX(0); } }
+    color: black;
+    text-transform: uppercase; }
   header a h1 img.logo {
     width: 120px;
     position: fixed;
     left: 50%;
     top: 30px;
     transform: translateX(-50%); }
-    @media (max-width: 500px) {
-      header a h1 img.logo {
-        left: 30px;
-        transform: translateX(0); } }
   header div.menu-area {
     position: fixed;
     top: 0;
@@ -202,33 +189,76 @@ div.menu {
 div.menu.open {
   transform: translateY(0); }
 
+/* =========== footer =========== */
+footer {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  font-size: 14px;
+  color: #999999; }
+  footer div.footer-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 30px 30px 30px;
+    display: flex;
+    justify-content: space-between; }
+    footer div.footer-wrap a {
+      color: #999999; }
+    footer div.footer-wrap div {
+      width: 50%; }
+    footer div.footer-wrap div.credit {
+      text-align: right; }
+
 /* =========== About =========== */
 header a.social-about {
-  color: #fff; }
+  color: #fff;
+  text-transform: uppercase; }
 
 main {
   background-color: black;
   color: #fff; }
 
 section.profile-hero {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: black; }
 
 section.hero-title {
-  height: 100vh;
+  height: 100%;
   margin-top: -44%; }
   section.hero-title h1 {
     font-size: 53vw;
     color: #fff;
     text-transform: uppercase; }
 
-section.profile-content {
-  display: flex; }
-  section.profile-content p {
+section.profile {
+  display: flex;
+  align-items: center;
+  min-height: 100vh; }
+  section.profile p:nth-child(1) {
+    margin-bottom: 16px; }
+  section.profile .profile-content {
+    position: relative;
+    min-height: 100vh; }
+  section.profile div.content {
     width: 50%;
-    float: right; }
-  section.profile-content div {
-    width: 50%; }
-  section.profile-content div img {
+    margin-left: 50%; }
+  section.profile div.parallax-img {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(8deg); }
+  section.profile div.parallax-img img {
     width: 300px; }
+  section.profile div.dot {
+    width: 80px;
+    height: 80px;
+    background-color: #fc3e17;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0; }
