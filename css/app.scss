@@ -52,6 +52,16 @@ a {
     text-decoration: none;
 }
 
+// div.progress {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 6px;
+//     height: 0%;
+//     background-color: $orange-color;
+//     z-index: 1;
+// }
+
 
 
 
@@ -264,7 +274,7 @@ footer {
 
 
 
-  /* =========== About =========== */
+  /* =========== Profile =========== */
 
   header a.social-about {
       color: $white-color;
@@ -285,10 +295,11 @@ footer {
 
   section.hero-title {
     height: 100%;
-    margin-top: -44%;
+    margin-top: -40%;
 
         h1 {
-            font-size: 53vw;
+            font-family: $title-font;
+            font-size: 50.5vw;
             color: $white-color;
             text-transform: $uppercase;
         }
@@ -299,6 +310,7 @@ footer {
       display: flex;
       align-items: center;
       min-height: 100vh;
+    //   background-color: $white-color;
 
 
 
@@ -309,6 +321,9 @@ footer {
         .profile-content {
             position: relative;
             min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 30px;
         }
 
         div.content {
@@ -321,8 +336,11 @@ footer {
             width: 50%;
             position: absolute;
             left: 0;
-            top: 0;
-            transform: rotate(8deg);
+            top: 50%;
+            transform: translateY(-50%) rotate(8deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         div.parallax-img img {
@@ -336,7 +354,7 @@ footer {
             border-radius: 50%;
             position: absolute;
             top: 0;
-            right: 0;
+            right: 30px;
         }
 
   }
