@@ -81,6 +81,13 @@ menuBallTag.addEventListener('click', function () {
     burgerOneTag.style.transform = ''
     burgerTwoTag.style.transform = ''
   }
+
+
+  if (menuTag.classList.contains('open')) {
+    instaTag.classList.remove('white')
+  } else {
+    instaTag.classList.add('white')
+  }
   
 })
 
@@ -151,3 +158,7 @@ navAreas.forEach(navArea => {
   })
   
 })
+
+
+
+

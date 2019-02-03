@@ -9,7 +9,7 @@ $orange-color: #fc3e17;
 
 $body-font: "Maison Mono";
 $title-font: "Trade Gothic";
-$body-size: 24px;
+$body-size: 16px;
 $link-size: 15px;
 $uppercase: uppercase;
 
@@ -38,7 +38,6 @@ body {
     font-family: $body-font;
     line-height: 1.5;
     font-size: $body-size;
-    text-transform: $uppercase;
 
     @include mq($mq-medium) {
         background-color: yellow;
@@ -153,6 +152,10 @@ header.animated {
 	transform: translate3d(0, 0%, 0);
 }
 
+header a.white {
+	color: #ffffff;
+}
+
 
 
 
@@ -215,3 +218,55 @@ div.menu {
     transform: translateY(0);
   }
   
+
+
+
+  /* =========== About =========== */
+
+  header a.social-about {
+      color: $white-color;
+  }
+
+
+  main {
+    background-color: $primary-color; 
+    color: $white-color;
+  }
+
+  section.profile-hero {
+      height: 100vh;
+      width:100%;
+      background-color: $primary-color;
+  }
+
+  section.hero-title {
+    height: 100vh;
+    margin-top: -44%;
+
+        h1 {
+            font-size: 53vw;
+            color: $white-color;
+            text-transform: $uppercase;
+        }
+
+  }
+
+  section.profile-content {
+      display: flex;
+
+
+      p {
+          width: 50%;
+          float: right;
+      }
+
+      div {
+          width: 50%;
+      }
+
+      div img {
+        width: 300px;
+      }
+  }
+
+
