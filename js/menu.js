@@ -66,6 +66,8 @@ const menuBallTag = areaTag.querySelector('div.menu-ball')
 // menu opens and burger is animated
 
 const menuTag = document.querySelector('div.menu')
+const instaTag = document.querySelector('header a.social-about')
+const logoTag = document.querySelector('header a h1')
 
 const burgerOneTag = document.querySelector('div.burger1')
 const burgerTwoTag = document.querySelector('div.burger2')
@@ -77,17 +79,16 @@ menuBallTag.addEventListener('click', function () {
   if (menuTag.classList.contains('open')) {
     burgerOneTag.style.transform = 'translateY(3px) rotate(-45deg)'
     burgerTwoTag.style.transform = 'translateY(-3px) rotate(45deg)'
+    instaTag.style.color = 'black'
+    logoTag.innerHTML = `<img src="../img/logo-black.svg" class="logo">`
+
   } else {
     burgerOneTag.style.transform = ''
     burgerTwoTag.style.transform = ''
+    instaTag.style.color = 'white'
+    logoTag.innerHTML = `<img src="../img/logo.svg" class="logo">`
   }
 
-
-  if (menuTag.classList.contains('open')) {
-    instaTag.classList.remove('white')
-  } else {
-    instaTag.classList.add('white')
-  }
   
 })
 
