@@ -17,7 +17,6 @@ const loaderMaskTag = document.querySelector('div.loader-mask')
 setTimeout(function () { 
     loaderTag.style.opacity = '0'
 
-
     headerTag.classList.add('animated')
 
   }, 1200)
