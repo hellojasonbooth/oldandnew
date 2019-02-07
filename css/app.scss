@@ -99,9 +99,9 @@ div.loader {
         top: 0;
         left: 0;
         width: 100%;
-        height: 6px;
+        height: 4px;
         background-color: $primary-color;
-        animation: loaderLine 1s ease;
+        animation: loaderLine 1s cubic-bezier(.72,0,.01,1);
     }
 
     div.loader-mask {
