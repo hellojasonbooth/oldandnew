@@ -79,13 +79,13 @@ menuBallTag.addEventListener('click', function () {
   if (menuTag.classList.contains('open')) {
     burgerOneTag.style.transform = 'translateY(3px) rotate(-45deg)'
     burgerTwoTag.style.transform = 'translateY(-3px) rotate(45deg)'
-    instaTag.style.color = 'black'
+    instaTag.classList.add('black')
     logoTag.innerHTML = `<img src="../img/logo-black.svg" class="logo">`
 
   } else {
     burgerOneTag.style.transform = ''
     burgerTwoTag.style.transform = ''
-    instaTag.style.color = 'white'
+    instaTag.classList.remove('black')
     logoTag.innerHTML = `<img src="../img/logo.svg" class="logo">`
   }
 

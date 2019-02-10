@@ -10,7 +10,7 @@ $orange-color: #fc3e17;
 $body-font: "Maison Mono";
 $title-font: "Trade Gothic";
 $body-size: 16px;
-$link-size: 14px;
+$link-size: 13px;
 $uppercase: uppercase;
 
 $mq-xlarge: 1000px;
@@ -128,7 +128,7 @@ header {
     align-items: center;
     font-size: $link-size;
     color: $primary-color;
-    padding-left: 30px;
+    padding-left: 40px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -143,13 +143,7 @@ header {
 
     a.social {
         color: $primary-color; 
-        text-transform: $uppercase; 
-
-        // @include mq($mq-small) {
-        //     left: 30px;
-        //     transform: translateX(0);
-        //   }
-
+        text-transform: $uppercase;
     }
 
     a h1 img.logo {
@@ -305,7 +299,7 @@ footer {
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 0 30px 30px 30px;
+        padding: 0 40px 40px 40px;
 
         display: flex;
         justify-content: space-between;
@@ -322,6 +316,16 @@ footer {
         div.credit {
             text-align: right;
         }
+
+        div.social-links {
+        
+            a {
+                margin-right: 20px;
+            }
+
+        }
+
+
     }
 
 }
@@ -335,6 +339,11 @@ footer {
   header a.social-about {
       color: $white-color;
       text-transform: $uppercase;
+      transition: color 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1);
+  }
+
+  header a.social-about.black {
+    color: $primary-color;
   }
 
 

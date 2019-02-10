@@ -110,9 +110,9 @@ div.loader {
 header {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
   color: black;
-  padding-left: 30px;
+  padding-left: 40px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -229,14 +229,14 @@ footer {
   width: 100%;
   background-color: black;
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   color: #999999; }
   footer div.footer-wrap {
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 0 30px 30px 30px;
+    padding: 0 40px 40px 40px;
     display: flex;
     justify-content: space-between; }
     footer div.footer-wrap a {
@@ -245,11 +245,17 @@ footer {
       width: 50%; }
     footer div.footer-wrap div.credit {
       text-align: right; }
+    footer div.footer-wrap div.social-links a {
+      margin-right: 20px; }
 
 /* =========== Profile =========== */
 header a.social-about {
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: color 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1); }
+
+header a.social-about.black {
+  color: black; }
 
 main {
   background-color: black;
