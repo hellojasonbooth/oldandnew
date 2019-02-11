@@ -95,8 +95,6 @@ menuBallTag.addEventListener('click', function () {
 
 
 
-
-
 // menu items parallax
 
 const navAreas = document.querySelectorAll('div div.nav-area--wrap')
