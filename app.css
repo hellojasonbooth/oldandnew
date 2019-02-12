@@ -256,8 +256,12 @@ footer {
       width: 50%; }
     footer div.footer-wrap div.credit {
       text-align: right; }
+    footer div.footer-wrap div.social-links span {
+      overflow: hidden; }
     footer div.footer-wrap div.social-links a {
-      margin-right: 20px; }
+      margin-right: 20px;
+      transform: translateY(14px);
+      display: inline-block; }
 
 /* =========== Profile =========== */
 header a.social-about {

@@ -28,7 +28,7 @@ setTimeout(function () {
 
 
 
-  animateDesc = function () {
+  animateLoaderDesc = function () {
   
     let delayItems = 0.1
     
@@ -43,4 +43,4 @@ setTimeout(function () {
 
   }
 
-  animateDesc()
+  animateLoaderDesc()

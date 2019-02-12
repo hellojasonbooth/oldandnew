@@ -323,9 +323,15 @@ footer {
         }
 
         div.social-links {
+
+            span {
+                overflow: hidden;
+            }
         
             a {
                 margin-right: 20px;
+                transform: translateY(14px);
+                display: inline-block;
             }
 
         }
