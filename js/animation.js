@@ -28,11 +28,26 @@ animatedTags.forEach(tag =>{
 
 
 
-  // const infoMaskTag = document.querySelectorAll('div.profile-info p:before')
+  const infoMaskTag = document.querySelectorAll('div.profile-info div.info-mask')
 
-  // infoMaskTag.forEach(tag =>{
-  //   tag.style.width = '40px'
-  // })
+  const infoMaskAnimate = function() {
+
+  infoMaskTag.forEach(tag =>{
+    const tagTop = tag.getBoundingClientRect().top
+    const tagBottom = tag.getBoundingClientRect().bottom
+
+
+    if(tagTop < window.innerHeight && tagBottom > 0) {
+      tag.style.width = '0%'
+    } else {
+      tag.style.width = '100%'
+    }
+
+  })
+
+}
+
+infoMaskAnimate()
 
 
 
@@ -40,4 +55,5 @@ animatedTags.forEach(tag =>{
 
   document.addEventListener('scroll', function () {
     fadeInTags() 
+    infoMaskAnimate()
   })

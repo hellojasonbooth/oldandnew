@@ -236,7 +236,7 @@ div.menu.open {
 
 /* =========== footer =========== */
 footer {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-color: black;
   position: relative;
@@ -294,14 +294,6 @@ section.profile {
   display: flex;
   align-items: center;
   min-height: 100vh; }
-  section.profile p:before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    top: 0; }
   section.profile .profile-content {
     position: relative;
     min-height: 100vh;
@@ -310,8 +302,20 @@ section.profile {
     padding: 30px; }
   section.profile div.profile-info {
     width: 50%;
-    margin-left: 50%;
-    position: relative; }
+    margin-left: 50%; }
+    section.profile div.profile-info .info-mask {
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: width 0.8s 0.3s cubic-bezier(0.72, 0, 0.01, 1); }
+    section.profile div.profile-info .info-mask.animated {
+      width: 0%; }
+    section.profile div.profile-info div.info-wrap {
+      margin-bottom: 32px;
+      position: relative; }
   section.profile div.parallax-img {
     width: 50%;
     position: absolute;

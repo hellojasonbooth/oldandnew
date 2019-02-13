@@ -292,7 +292,7 @@ div.menu {
   /* =========== footer =========== */
   
 footer {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-color: $primary-color;
     position: relative;
@@ -386,21 +386,7 @@ footer {
       display: flex;
       align-items: center;
       min-height: 100vh;
-    //   background-color: $white-color;
 
-        p:before {
-            content: "";
-            height: 100%;
-            width: 100%;
-            background-color: white;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        // p:nth-child(1) {
-        //     margin-bottom: 16px;
-        // }
 
         .profile-content {
             position: relative;
@@ -413,7 +399,27 @@ footer {
         div.profile-info {
             width: 50%;
             margin-left: 50%;
-            position: relative;
+
+            .info-mask {
+                height: 100%;
+                width: 100%;
+                background-color: white;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transition: width 0.8s 0.3s cubic-bezier(.72,0,.01,1);
+            }
+
+            .info-mask.animated {
+                width: 0%;
+            }
+
+            div.info-wrap {
+                margin-bottom: 32px;
+                position: relative;
+            }
+
+
         }
 
 
