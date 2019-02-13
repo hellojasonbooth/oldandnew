@@ -67,7 +67,7 @@ const menuBallTag = areaTag.querySelector('div.menu-ball')
 
 const menuTag = document.querySelector('div.menu')
 const instaTag = document.querySelector('header a.social-about')
-const logoTag = document.querySelector('header a h1')
+const logoTag =  document.querySelector("header a h1 svg")
 
 const burgerOneTag = document.querySelector('div.burger1')
 const burgerTwoTag = document.querySelector('div.burger2')
@@ -80,13 +80,13 @@ menuBallTag.addEventListener('click', function () {
     burgerOneTag.style.transform = 'translateY(3px) rotate(-45deg)'
     burgerTwoTag.style.transform = 'translateY(-3px) rotate(45deg)'
     instaTag.classList.add('black')
-    logoTag.innerHTML = `<img src="../img/logo-black.svg" class="logo">`
+    logoTag.classList.add('animated')
 
   } else {
     burgerOneTag.style.transform = ''
     burgerTwoTag.style.transform = ''
     instaTag.classList.remove('black')
-    logoTag.innerHTML = `<img src="../img/logo.svg" class="logo">`
+    logoTag.classList.remove('animated')
   }
 
   

@@ -1,5 +1,5 @@
 
-
+// this animates links in the footer
 const animatedTags = document.querySelectorAll('footer div.social-links a')
 
 animatedTags.forEach(tag =>{
@@ -28,6 +28,8 @@ animatedTags.forEach(tag =>{
 
 
 
+  // this animates a the mask for the profile page
+
   const infoMaskTag = document.querySelectorAll('div.profile-info div.info-mask')
 
   const infoMaskAnimate = function() {
@@ -52,7 +54,7 @@ infoMaskAnimate()
 
 
 
-
+// event listener for scroll to animate in and out certain elements
   document.addEventListener('scroll', function () {
     fadeInTags() 
     infoMaskAnimate()

@@ -54,14 +54,6 @@ body {
     font-family: $body-font;
     line-height: 1.5;
     font-size: $body-size;
-
-    // @include mq($mq-medium) {
-    //     background-color: yellow;
-    // }
-
-    // @include mq($mq-small) {
-    //     background-color: #000;
-    // }
 }
 
 a {
@@ -151,19 +143,22 @@ header {
         text-transform: $uppercase;
     }
 
-    a h1 img.logo {
+    a h1 svg {
         width: 120px;
         position: fixed;
         left: 50%;
         top: 30px;
         transform: translateX(-50%);
-
-        // @include mq($mq-small) {
-        //   left: 30px;
-        //   transform: translateX(0);
-        // }
+        fill: white;
+        transition: fill 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1);
 
     }
+
+    a h1 svg.animated {
+        fill: black;
+    }
+
+    
 
 
     div.menu-area {
