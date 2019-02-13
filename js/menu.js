@@ -63,7 +63,8 @@ const menuBallTag = areaTag.querySelector('div.menu-ball')
 
 
 
-// menu opens and burger is animated
+// when menu opens
+// animate burgers, menu and manipulate insta tag and logo to change color
 
 const menuTag = document.querySelector('div.menu')
 const instaTag = document.querySelector('header a.social-about')
