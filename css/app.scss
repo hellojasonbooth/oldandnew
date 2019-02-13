@@ -388,11 +388,19 @@ footer {
       min-height: 100vh;
     //   background-color: $white-color;
 
-
-
-        p:nth-child(1) {
-            margin-bottom: 16px;
+        p:before {
+            content: "";
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
+
+        // p:nth-child(1) {
+        //     margin-bottom: 16px;
+        // }
 
         .profile-content {
             position: relative;
@@ -402,9 +410,10 @@ footer {
             padding: 30px;
         }
 
-        div.content {
+        div.profile-info {
             width: 50%;
             margin-left: 50%;
+            position: relative;
         }
 
 

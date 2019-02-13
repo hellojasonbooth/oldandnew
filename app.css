@@ -294,17 +294,24 @@ section.profile {
   display: flex;
   align-items: center;
   min-height: 100vh; }
-  section.profile p:nth-child(1) {
-    margin-bottom: 16px; }
+  section.profile p:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 0; }
   section.profile .profile-content {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 30px; }
-  section.profile div.content {
+  section.profile div.profile-info {
     width: 50%;
-    margin-left: 50%; }
+    margin-left: 50%;
+    position: relative; }
   section.profile div.parallax-img {
     width: 50%;
     position: absolute;

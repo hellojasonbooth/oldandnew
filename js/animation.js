@@ -26,6 +26,18 @@ animatedTags.forEach(tag =>{
 
   fadeInTags()
 
+
+
+  // const infoMaskTag = document.querySelectorAll('div.profile-info p:before')
+
+  // infoMaskTag.forEach(tag =>{
+  //   tag.style.width = '40px'
+  // })
+
+
+
+
+
   document.addEventListener('scroll', function () {
     fadeInTags() 
   })
