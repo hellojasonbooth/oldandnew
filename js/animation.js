@@ -1,6 +1,6 @@
 
 // this animates links in the footer
-const animatedTags = document.querySelectorAll('footer div.social-links a')
+const animatedTags = document.querySelectorAll('footer span a')
 
 animatedTags.forEach(tag =>{
     tag.style.opacity = 0
@@ -16,7 +16,7 @@ animatedTags.forEach(tag =>{
          
       if(tagTop < window.innerHeight && tagBottom > 0) {
         tag.style.animation = `fadeup 0.8s ${delay}s both`
-        delay = delay + 0.1
+        delay = delay + 0.2
       } else {
         tag.style.opacity = 0
         tag.style.animation = ""
