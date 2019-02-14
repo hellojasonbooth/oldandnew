@@ -45,6 +45,11 @@ $mq-small: 500px;
     100% {transform: translateY(0px) rotate(0deg); opacity: 1;}
   }
 
+@keyframes mask {
+    0% {width:100%;}
+    100% {width:0;}
+}
+
 
 
 
@@ -402,11 +407,11 @@ footer {
                 position: absolute;
                 right: 0;
                 top: 0;
-                transition: width 0.8s 0.3s cubic-bezier(.72,0,.01,1);
+                // transition: width 0.8s 0.3s cubic-bezier(.72,0,.01,1);
             }
 
             .info-mask.animated {
-                width: 0%;
+                animation: mask 0.8s cubic-bezier(.72,0,.01,1);
             }
 
             div.info-wrap {

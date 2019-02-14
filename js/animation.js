@@ -40,9 +40,9 @@ animatedTags.forEach(tag =>{
 
 
     if(tagTop < window.innerHeight && tagBottom > 0) {
-      tag.style.width = '0%'
+      tag.style.animation = 'mask 0.8s 0.2s both'
     } else {
-      tag.style.width = '100%'
+      tag.style.animation = ""
     }
 
   })

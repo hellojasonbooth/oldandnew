@@ -76,6 +76,12 @@ input, textarea, select {
     transform: translateY(0px) rotate(0deg);
     opacity: 1; } }
 
+@keyframes mask {
+  0% {
+    width: 100%; }
+  100% {
+    width: 0; } }
+
 body {
   background-color: #fff;
   color: black;
@@ -313,10 +319,9 @@ section.profile {
       background-color: white;
       position: absolute;
       right: 0;
-      top: 0;
-      transition: width 0.8s 0.3s cubic-bezier(0.72, 0, 0.01, 1); }
+      top: 0; }
     section.profile div.profile-info .info-mask.animated {
-      width: 0%; }
+      animation: mask 0.8s cubic-bezier(0.72, 0, 0.01, 1); }
     section.profile div.profile-info div.info-wrap {
       margin-bottom: 32px;
       position: relative; }
