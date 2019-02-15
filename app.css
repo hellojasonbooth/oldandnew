@@ -266,6 +266,8 @@ footer {
       width: 50%; }
     footer div.footer-wrap div.credit {
       text-align: right; }
+      footer div.footer-wrap div.credit a:nth-child(1) {
+        margin-right: 0px; }
     footer div.footer-wrap span {
       overflow: hidden; }
     footer div.footer-wrap a {
