@@ -150,6 +150,14 @@ header {
     transform: translateX(-50%);
     fill: white;
     transition: fill 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1); }
+  header img {
+    width: 120px;
+    position: fixed;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    fill: white;
+    transition: fill 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1); }
   header a h1 svg.animated {
     fill: black; }
   header div.menu-area {
@@ -264,16 +272,21 @@ footer {
       color: #999999; }
     footer div.footer-wrap div {
       width: 50%; }
-    footer div.footer-wrap div.credit {
-      text-align: right; }
-      footer div.footer-wrap div.credit a:nth-child(1) {
-        margin-right: 0px; }
     footer div.footer-wrap span {
       overflow: hidden; }
     footer div.footer-wrap a {
       margin-right: 20px;
       transform: translateY(14px);
-      display: inline-block; }
+      display: inline-block;
+      transition: color 0.3s ease; }
+    footer div.footer-wrap a:hover {
+      color: #fff; }
+    footer div.footer-wrap div.credit {
+      text-align: right; }
+      footer div.footer-wrap div.credit span a:nth-child(1) {
+        margin-right: 0px; }
+      footer div.footer-wrap div.credit span a.coded-by:hover {
+        color: #999999; }
 
 /* =========== Profile =========== */
 header a.social-about {

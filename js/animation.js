@@ -28,7 +28,7 @@ animatedTags.forEach(tag =>{
 
 
 
-  // this animates a the mask for the profile page
+  // this animates the mask for the info on the profile page
 
   const infoMaskTag = document.querySelectorAll('div.profile-info div.info-mask')
 
