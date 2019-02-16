@@ -383,13 +383,16 @@ section.contact-title {
     display: flex;
     flex-direction: column;
     margin-top: 60px; }
+    section.contact-title div.contact-page--links span {
+      overflow: hidden; }
     section.contact-title div.contact-page--links a {
       color: #999999;
       font-size: 13px;
       text-transform: uppercase;
       margin-bottom: 5px;
       transition: color 0.3s ease;
-      display: inline-block; }
+      display: inline-block;
+      transform: translateY(22px); }
       section.contact-title div.contact-page--links a:hover {
         color: #fff; }
   section.contact-title div.dot {

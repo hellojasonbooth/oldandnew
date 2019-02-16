@@ -531,6 +531,11 @@ section.contact-title {
             flex-direction: column;
             margin-top: 60px;
 
+
+            span {
+                overflow: hidden;
+            }
+
             a {
                 color: $grey-color;
                 font-size: $link-size;
@@ -538,6 +543,7 @@ section.contact-title {
                 margin-bottom: 5px;
                 transition: color 0.3s ease;
                 display: inline-block;
+                transform: translateY(22px);
 
                 &:hover {
                     color: $white-color; 
