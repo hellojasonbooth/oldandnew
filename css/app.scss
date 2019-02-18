@@ -622,6 +622,16 @@ section.contact-title {
         height: 100vh;
     }
 
+    span.img-span {
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        height: 60vh;
+        width: auto;
+        overflow: hidden;
+        transform: translateX(-50%);
+    }
+
     span {
         overflow: hidden;
         z-index: 4;
@@ -640,13 +650,12 @@ section.contact-title {
     }
 
     img {
-        position: absolute;
-        height: 60vh;
-        width: auto;
+        
+        height: 100%;
         will-change: transform;
-        // transform: translateY(140%);
         z-index: 0;
         transition: transform 0.8s;
+        transform: translateY(70vh);
     }
 
 

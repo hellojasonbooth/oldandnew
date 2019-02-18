@@ -440,6 +440,14 @@ div.collection {
     justify-content: center;
     align-items: center;
     height: 100vh; }
+  div.collection span.img-span {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    height: 60vh;
+    width: auto;
+    overflow: hidden;
+    transform: translateX(-50%); }
   div.collection span {
     overflow: hidden;
     z-index: 4; }
@@ -454,12 +462,11 @@ div.collection {
     line-height: 1;
     transform: translateY(220px); }
   div.collection img {
-    position: absolute;
-    height: 60vh;
-    width: auto;
+    height: 100%;
     will-change: transform;
     z-index: 0;
-    transition: transform 0.8s; }
+    transition: transform 0.8s;
+    transform: translateY(70vh); }
 
 ul.pagination {
   position: fixed;

@@ -107,30 +107,24 @@ const sectionTitleTags = document.querySelectorAll('section div.collection-wrap 
 sectionTitleAnimate()
 
 
-// const sectionImageTags = document.querySelectorAll('section div.collection-wrap img')
-
-// // sectionImageTags.forEach(tag => {
-// //   tag.style.transform = 'translate3d(0, 150%, 0) rotate(20deg)'
-// // })
+const sectionImageTags = document.querySelectorAll('section div.collection-wrap img')
 
 
-// const sectionImageAnimate = function() {
+const sectionImageAnimate = function() {
 
-//   sectionImageTags.forEach(tag => {
+  sectionImageTags.forEach(tag => {
 
-//     const tagTop = tag.getBoundingClientRect().top
-//     const tagBottom = tag.getBoundingClientRect().bottom
+    const tagTop = tag.getBoundingClientRect().top
+    const tagBottom = tag.getBoundingClientRect().bottom
     
-//     if (tagTop < window.innerHeight && tagBottom > 0) {
-//       tag.style.transform = 'translateY(140%)'
-//     } else {
-//       tag.style.transform = 'translateY(0%)'
-//     }
+    if (tagTop < window.innerHeight && tagBottom > 0) {
+      tag.style.transform = 'translateY(0vh)'
+    }
 
-//   })
+  })
 
-// }
-// sectionImageAnimate()
+}
+sectionImageAnimate()
 
 
 
