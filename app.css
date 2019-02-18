@@ -420,3 +420,43 @@ div.contact-info--wrap {
   div.contact-info--wrap div.emoji {
     font-size: 22px;
     margin-bottom: 30px; }
+
+/* =========== Homepage =========== */
+div.collection {
+  height: 100vh;
+  background-color: #fff; }
+  div.collection div.collection-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; }
+  div.collection h1 {
+    font-family: "Trade Gothic";
+    font-size: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -5px;
+    z-index: 4;
+    overflow: hidden; }
+  div.collection img {
+    position: absolute;
+    height: 60vh;
+    width: auto;
+    will-change: transform;
+    transition: transform 1.4s; }
+
+ul.pagination {
+  position: fixed;
+  right: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; }
+  ul.pagination a {
+    width: 16px;
+    height: 1px;
+    display: block;
+    border: 1px solid  #b9b9b9;
+    display: block;
+    margin-bottom: 20px; }
