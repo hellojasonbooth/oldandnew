@@ -82,6 +82,12 @@ input, textarea, select {
   100% {
     width: 0; } }
 
+@keyframes fadeInTitle {
+  0% {
+    transform: translateY(220px); }
+  100% {
+    transform: translateY(0px); } }
+
 body {
   background-color: #fff;
   color: black;
@@ -422,6 +428,9 @@ div.contact-info--wrap {
     margin-bottom: 30px; }
 
 /* =========== Homepage =========== */
+section.panel {
+  overflow: hidden; }
+
 div.collection {
   height: 100vh;
   background-color: #fff; }
@@ -431,6 +440,9 @@ div.collection {
     justify-content: center;
     align-items: center;
     height: 100vh; }
+  div.collection span {
+    overflow: hidden;
+    z-index: 4; }
   div.collection h1 {
     font-family: "Trade Gothic";
     font-size: 220px;
@@ -438,14 +450,16 @@ div.collection {
     justify-content: center;
     align-items: center;
     letter-spacing: -5px;
-    z-index: 4;
-    overflow: hidden; }
+    overflow: hidden;
+    line-height: 1;
+    transform: translateY(220px); }
   div.collection img {
     position: absolute;
     height: 60vh;
     width: auto;
     will-change: transform;
-    transition: transform 1.4s; }
+    z-index: 0;
+    transition: transform 0.8s; }
 
 ul.pagination {
   position: fixed;

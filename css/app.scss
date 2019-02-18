@@ -50,6 +50,16 @@ $mq-small: 500px;
     100% {width:0;}
 }
 
+@keyframes fadeInTitle {
+    0% {transform: translateY(220px)}
+    100% {transform: translateY(0px)}
+}
+
+// @keyframes fadeInImage {
+//     0% {transform: translateY(0)}
+//     100% {transform: translateY(-100%)}
+// }
+
 
 
 
@@ -593,6 +603,11 @@ section.contact-title {
 
   /* =========== Homepage =========== */
 
+
+  section.panel {
+    overflow: hidden;
+  }
+
   div.collection {
     height: 100vh;
     background-color: $white-color;
@@ -607,6 +622,11 @@ section.contact-title {
         height: 100vh;
     }
 
+    span {
+        overflow: hidden;
+        z-index: 4;
+    }
+
     h1 {
         font-family: $title-font;
         font-size: 220px;
@@ -614,8 +634,9 @@ section.contact-title {
         justify-content: center;
         align-items: center;
         letter-spacing: -5px;
-        z-index: 4;
         overflow: hidden;
+        line-height: 1;
+        transform: translateY(220px);
     }
 
     img {
@@ -623,11 +644,17 @@ section.contact-title {
         height: 60vh;
         width: auto;
         will-change: transform;
-        // transform: translate3d(0, 100vh, 0) rotate(0deg);
-        // z-index: -1;
-        transition: transform 1.4s;
+        // transform: translateY(140%);
+        z-index: 0;
+        transition: transform 0.8s;
     }
+
+
   }
+
+    // div.collection img.animated {
+    //     transform: translate3d(0, 0%, 0) rotate(0deg);
+    // }
 
     ul.pagination {
         position: fixed;
@@ -636,9 +663,7 @@ section.contact-title {
         transform: translateY(-50%);
         z-index: 10;
 
-        // li {
-        //     padding:6px;
-        // }
+        
 
         a {
             width: 16px;

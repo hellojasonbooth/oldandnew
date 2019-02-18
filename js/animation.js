@@ -27,7 +27,7 @@ animatedTags.forEach(tag =>{
   fadeInTags()
 
 
-// this animates links in the footer
+// this animates links at the top of the contact page
 const animatedContactTags = document.querySelectorAll('div.contact-page--links span a')
 
 animatedContactTags.forEach(tag =>{
@@ -53,13 +53,6 @@ animatedContactTags.forEach(tag =>{
   }
 
   fadeInContactTags()
-
-
-
-
-
-
-
 
 
 
@@ -92,9 +85,65 @@ infoMaskAnimate()
 
 
 
+// this animates the section titles 
+const sectionTitleTags = document.querySelectorAll('section div.collection-wrap h1')
+
+  const sectionTitleAnimate = function() {
+
+    sectionTitleTags.forEach(tag => {
+
+    const tagTop = tag.getBoundingClientRect().top
+    const tagBottom = tag.getBoundingClientRect().bottom
+
+    if (tagTop < window.innerHeight && tagBottom > 0) {
+        tag.style.animation = `fadeInTitle 0.5s 0.5s both`
+    } else {
+        tag.style.animation = ""
+    }
+
+  })
+
+}
+sectionTitleAnimate()
+
+
+// const sectionImageTags = document.querySelectorAll('section div.collection-wrap img')
+
+// // sectionImageTags.forEach(tag => {
+// //   tag.style.transform = 'translate3d(0, 150%, 0) rotate(20deg)'
+// // })
+
+
+// const sectionImageAnimate = function() {
+
+//   sectionImageTags.forEach(tag => {
+
+//     const tagTop = tag.getBoundingClientRect().top
+//     const tagBottom = tag.getBoundingClientRect().bottom
+    
+//     if (tagTop < window.innerHeight && tagBottom > 0) {
+//       tag.style.transform = 'translateY(140%)'
+//     } else {
+//       tag.style.transform = 'translateY(0%)'
+//     }
+
+//   })
+
+// }
+// sectionImageAnimate()
+
+
+
+
+
+
+
+
 // event listener for scroll to animate in and out certain elements
   document.addEventListener('scroll', function () {
     fadeInTags() 
     infoMaskAnimate()
     fadeInContactTags()
+    sectionTitleAnimate()
+    sectionImageAnimate()
   })
