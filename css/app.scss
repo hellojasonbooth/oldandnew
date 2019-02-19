@@ -50,6 +50,11 @@ $mq-small: 500px;
     100% {width:0;}
 }
 
+@keyframes maskedTitles {
+    0% {width: 100%;}
+    100% {width: 0%;}
+}
+
 @keyframes fadeInTitle {
     0% {transform: translateY(220px)}
     100% {transform: translateY(0px)}
@@ -606,13 +611,29 @@ section.contact-title {
 
   section.panel {
     overflow: hidden;
+
+
+    div.title-wrap {
+        position: relative;
+        overflow: hidden;
+        z-index: 4;
+
+        div.title-mask {
+            height: 80%;
+            width: 100%;
+            background-color: $primary-color;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+    }
+
   }
 
   div.collection {
     height: 100vh;
     background-color: $white-color;
-    // border-bottom: 1px solid #000;
-    // position: relative;
 
     div.collection-wrap {
         position: relative;
@@ -623,18 +644,19 @@ section.contact-title {
     }
 
     span.img-span {
-        display: inline-block;
+        display: flex;
         position: absolute;
         left: 50%;
         height: 60vh;
-        width: auto;
+        width: 100%;
         overflow: hidden;
         transform: translateX(-50%);
+        justify-content: center;
     }
 
     span {
         overflow: hidden;
-        z-index: 4;
+        // z-index: 4;
     }
 
     h1 {
@@ -646,12 +668,12 @@ section.contact-title {
         letter-spacing: -5px;
         overflow: hidden;
         line-height: 1;
-        transform: translateY(220px);
+        // transform: translateY(220px);
     }
 
     img {
         
-        height: 90%;
+        height: 100%;
         will-change: transform;
         z-index: 0;
         transition: transform 0.8s;

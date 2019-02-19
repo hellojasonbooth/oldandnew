@@ -86,25 +86,50 @@ infoMaskAnimate()
 
 
 // this animates the section titles 
-const sectionTitleTags = document.querySelectorAll('section div.collection-wrap h1')
+// const sectionTitleTags = document.querySelectorAll('section div.collection-wrap h1')
 
-  const sectionTitleAnimate = function() {
+//   const sectionTitleAnimate = function() {
 
-    sectionTitleTags.forEach(tag => {
+//     sectionTitleTags.forEach(tag => {
 
+//     const tagTop = tag.getBoundingClientRect().top
+//     const tagBottom = tag.getBoundingClientRect().bottom
+
+//     if (tagTop < window.innerHeight && tagBottom > 0) {
+//         tag.style.animation = `fadeInTitle 0.5s 0.5s both`
+//     } else {
+//         tag.style.animation = ""
+//     }
+
+//   })
+
+// }
+// sectionTitleAnimate()
+
+
+
+  // this animates the mask for the titles on the homepage
+
+  const maskedTitleTags = document.querySelectorAll('section.panel div.title-wrap div.title-mask')
+
+  const maskedTitleAnimate = function() {
+
+    maskedTitleTags.forEach(tag =>{
     const tagTop = tag.getBoundingClientRect().top
     const tagBottom = tag.getBoundingClientRect().bottom
 
-    if (tagTop < window.innerHeight && tagBottom > 0) {
-        tag.style.animation = `fadeInTitle 0.5s 0.5s both`
+
+    if(tagTop < window.innerHeight && tagBottom > 0) {
+      tag.style.animation = 'maskedTitles 0.5s 0.6s cubic-bezier(.72,0,.01,1) both'
     } else {
-        tag.style.animation = ""
+      tag.style.animation = ""
     }
 
   })
 
 }
-sectionTitleAnimate()
+
+maskedTitleAnimate()
 
 
 const sectionImageTags = document.querySelectorAll('section div.collection-wrap img')
@@ -140,6 +165,7 @@ sectionImageAnimate()
     fadeInTags() 
     infoMaskAnimate()
     fadeInContactTags()
-    sectionTitleAnimate()
+    maskedTitleAnimate()
+    // sectionTitleAnimate()
     sectionImageAnimate()
   })
