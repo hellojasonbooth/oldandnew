@@ -118,8 +118,10 @@ const sectionImageAnimate = function() {
     const tagBottom = tag.getBoundingClientRect().bottom
     
     if (tagTop < window.innerHeight && tagBottom > 0) {
-      tag.style.transform = 'translateY(0vh)'
-    }
+      tag.style.animation = `fadeInImage 1.2s 0.8s both`
+    } else {
+      tag.style.animation = ""
+  }
 
   })
 
