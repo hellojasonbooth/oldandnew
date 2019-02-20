@@ -61,8 +61,8 @@ $mq-small: 500px;
 }
 
 @keyframes fadeInImage {
-    0% {transform: translateY(70vh)}
-    100% {transform: translateY(0%)}
+    0% {transform: translateY(75vh) rotate(20deg)}
+    100% {transform: translateY(0%) rotate(10deg)}
 }
 
 
@@ -643,11 +643,12 @@ section.contact-title {
         height: 100vh;
     }
 
-    span.img-span {
+    div.img-span {
         display: flex;
+        align-items:center;
         position: absolute;
         left: 50%;
-        height: 60vh;
+        height: 75vh;
         width: 100%;
         overflow: hidden;
         transform: translateX(-50%);
@@ -673,11 +674,11 @@ section.contact-title {
 
     img {
         
-        height: 100%;
+        height: 60vh;
         will-change: transform;
         z-index: 0;
         transition: transform 0.8s;
-        transform: translateY(70vh);
+        transform: translateY(75vh);
     }
 
 
