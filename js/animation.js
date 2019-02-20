@@ -130,6 +130,28 @@ const sectionImageAnimate = function() {
 sectionImageAnimate()
 
 
+// this animates the title dates
+
+const sectionTitleDate = document.querySelectorAll('section p.date')
+
+const titleDateAnimate = function(){
+
+  sectionTitleDate.forEach(tag => {
+
+    const tagTop = tag.getBoundingClientRect().top
+    const tagBottom = tag.getBoundingClientRect().bottom
+    
+    if (tagTop < window.innerHeight && tagBottom > 0) {
+      tag.style.animation = `date 0.5s 0.8s both`
+    } else {
+      tag.style.animation = ""
+    }
+
+  })
+
+}
+
+titleDateAnimate()
 
 
 
@@ -179,5 +201,6 @@ maskedTitleAnimate()
     infoMaskAnimate()
     fadeInContactTags()
     maskedTitleAnimate()
+    titleDateAnimate()
     // sectionTitleAnimate()
   })

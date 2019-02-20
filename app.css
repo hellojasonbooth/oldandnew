@@ -100,6 +100,12 @@ input, textarea, select {
   100% {
     transform: translateY(0%) rotate(10deg); } }
 
+@keyframes date {
+  0% {
+    transform: translateX(50px); }
+  100% {
+    transform: translateX(0px); } }
+
 body {
   background-color: #fff;
   color: black;
@@ -474,7 +480,12 @@ div.collection {
     transform: translateX(-50%);
     justify-content: center; }
   div.collection span {
-    overflow: hidden; }
+    overflow: hidden;
+    display: flex; }
+    div.collection span p.date {
+      font-size: 12px;
+      transition: transform ease;
+      transform: translateX(50px); }
   div.collection h1 {
     font-family: "Trade Gothic";
     font-size: 220px;
