@@ -446,6 +446,17 @@ div.contact-info--wrap {
     margin-bottom: 30px; }
 
 /* =========== Homepage =========== */
+div.main-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  transition: opacity 0.5s ease;
+  pointer-events: none; }
+
 section.panel {
   overflow: hidden; }
   section.panel div.title-wrap {
