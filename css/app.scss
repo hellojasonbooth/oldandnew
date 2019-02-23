@@ -615,6 +615,34 @@ section.contact-title {
 
 
 
+  div.cursor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px $grey-color;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    z-index: 999;
+    pointer-events: none;
+
+  }
+
+  div.cursor.is-active {
+    width: 60px;
+    height: 60px;
+    // background-color: #000000;
+    border: solid 1px $grey-color;
+  }
+
+
+
+
   div.main-loader {
     position: fixed;
     top:0;
