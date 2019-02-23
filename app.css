@@ -189,7 +189,7 @@ header {
     top: 0;
     right: 0;
     height: 90px;
-    width: 90px; }
+    width: 100px; }
   header div.menu-ball {
     display: flex;
     justify-content: center;
@@ -475,11 +475,18 @@ div.collection {
   height: 100vh;
   background-color: #fff; }
   div.collection div.collection-wrap {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; }
+    div.collection div.collection-wrap a {
+      display: flex;
+      width: auto;
+      height: 70%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      color: black; }
   div.collection div.img-span {
     display: flex;
     align-items: center;
@@ -526,3 +533,18 @@ ul.pagination {
     border: 1px solid  #b9b9b9;
     display: block;
     margin-bottom: 20px; }
+
+div.scroll-icon {
+  position: fixed;
+  bottom: 40px;
+  right: 40px; }
+
+footer.home-footer {
+  height: 100vh; }
+  footer.home-footer div.social-links {
+    display: flex; }
+  footer.home-footer div.credit {
+    display: flex;
+    justify-content: flex-end; }
+    footer.home-footer div.credit span:nth-child(1) {
+      margin-right: 8px; }

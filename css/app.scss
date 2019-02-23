@@ -202,7 +202,7 @@ header {
         top: 0;
         right: 0;
         height: 90px;
-        width: 90px;
+        width: 100px;
       }
       
       div.menu-ball {
@@ -656,11 +656,23 @@ section.contact-title {
     background-color: $white-color;
 
     div.collection-wrap {
-        position: relative;
+        // position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+
+
+
+        a {
+            display: flex;
+            width: auto;
+            height: 70%;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: $primary-color;
+        }
     }
 
     div.img-span {
@@ -732,4 +744,30 @@ section.contact-title {
             display: block;
             margin-bottom: 20px;
         }
+    }
+
+    div.scroll-icon {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    footer.home-footer {
+        height: 100vh;
+
+
+        div.social-links {
+            display:flex;
+        }
+
+        div.credit {
+            display:flex;
+            justify-content: flex-end;
+
+            span:nth-child(1) {
+                margin-right: 8px;
+            }
+        }
+
+
     }

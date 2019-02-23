@@ -32,10 +32,3 @@ const mainLoaderTag = document.querySelector('div.main-loader')
     mainLoaderTag.style.opacity = '0'
 
   }, 340)
-
-
-// $(".pagination a").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $(".panel3").offset().top
-//     }, 1200);
-// });

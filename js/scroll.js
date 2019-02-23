@@ -15,14 +15,5 @@ $.scrollify({
     before:function() {},
     after:function() {},
     afterResize:function() {},
-    afterRender:function() {
-      
-    }
+    afterRender:function() {}
   });
-
-
-  $(function() {
-    $.scrollify({
-      section : ".collection",
-    });
-});
