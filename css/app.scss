@@ -70,6 +70,11 @@ $mq-small: 500px;
     100% {transform: translateX(0px)}
 }
 
+@keyframes cursorText {
+    0% {transform: translateY(12px)}
+    100% {transform: translateY(0px)}
+}
+
 
 
 
@@ -617,10 +622,10 @@ section.contact-title {
 
   div.cursor {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -631,12 +636,27 @@ section.contact-title {
     z-index: 999;
     pointer-events: none;
 
+    font-size: 9px;
+
+
+    span {
+        overflow: hidden;
+
+
+        p {
+            display: inline-block;
+            transform: translateY(12px);
+            transition: transform ease;
+            color: $grey-color;
+        }
+    }
+
   }
 
   div.cursor.is-active {
     width: 60px;
     height: 60px;
-    // background-color: #000000;
+
     border: solid 1px $grey-color;
   }
 
@@ -703,6 +723,7 @@ section.contact-title {
         }
     }
 
+
     div.img-span {
         display: flex;
         align-items:center;
@@ -735,7 +756,8 @@ section.contact-title {
         letter-spacing: -5px;
         overflow: hidden;
         line-height: 1;
-        // transform: translateY(220px);
+
+        transition: letter-spacing 0.8s ease;
     }
 
     img {
@@ -749,6 +771,10 @@ section.contact-title {
 
 
   }
+
+    a.collection-link:hover {
+        cursor: none;
+    }
 
     // div.collection img.animated {
     //     transform: translate3d(0, 0%, 0) rotate(0deg);
