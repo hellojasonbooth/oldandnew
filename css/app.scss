@@ -71,7 +71,7 @@ $mq-small: 500px;
 }
 
 @keyframes cursorText {
-    0% {transform: translateY(12px)}
+    0% {transform: translateY(-12px)}
     100% {transform: translateY(0px)}
 }
 
@@ -639,14 +639,16 @@ section.contact-title {
     font-size: 9px;
 
 
-    span {
+    p {
         overflow: hidden;
 
 
-        p {
+        span {
             display: inline-block;
-            transform: translateY(12px);
-            transition: transform ease;
+            font-family: Helvetica, sans-serif;
+            margin: 0 1px;
+            transform: translateY(-12px);
+            transition: transform;
             color: $grey-color;
         }
     }
@@ -656,7 +658,6 @@ section.contact-title {
   div.cursor.is-active {
     width: 60px;
     height: 60px;
-
     border: solid 1px $grey-color;
   }
 

@@ -108,7 +108,7 @@ input, textarea, select {
 
 @keyframes cursorText {
   0% {
-    transform: translateY(12px); }
+    transform: translateY(-12px); }
   100% {
     transform: translateY(0px); } }
 
@@ -468,12 +468,14 @@ div.cursor {
   z-index: 999;
   pointer-events: none;
   font-size: 9px; }
-  div.cursor span {
+  div.cursor p {
     overflow: hidden; }
-    div.cursor span p {
+    div.cursor p span {
       display: inline-block;
-      transform: translateY(12px);
-      transition: transform ease;
+      font-family: Helvetica, sans-serif;
+      margin: 0 1px;
+      transform: translateY(-12px);
+      transition: transform;
       color: #999999; }
 
 div.cursor.is-active {
