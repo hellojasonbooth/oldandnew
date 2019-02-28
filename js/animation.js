@@ -117,12 +117,16 @@ const sectionImageAnimate = function() {
 
     const tagTop = tag.getBoundingClientRect().top
     const tagBottom = tag.getBoundingClientRect().bottom
+
+    //const z = 10 * (Math.floor( Math.random() * 4 )) - 10
     
     if (tagTop < window.innerHeight && tagBottom > 0) {
       tag.style.animation = `fadeInImage 1s 0.4s both`
+      //tag.style.transform = `translateY(0px) rotate(${z}deg)`
     } else {
       tag.style.animation = ""
-  }
+      //tag.style.transform = ""
+    }
 
   })
 
