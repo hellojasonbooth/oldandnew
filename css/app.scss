@@ -176,7 +176,7 @@ header {
     }
 
     a h1 svg {
-        width: 120px;
+        width: 110px;
         position: fixed;
         left: 50%;
         top: 30px;
@@ -627,6 +627,8 @@ section.contact-title {
   section div.contact-info--wrap {
     padding: 0 60px;
     position: relative;
+    max-width: 1400px;
+    margin: auto;
 
 
     div.emoji {

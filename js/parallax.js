@@ -22,3 +22,5 @@ document.addEventListener('scroll', function () {
         tag.style.transform = `translate(0, ${distanceToSection * speed - 50}%) rotate(6deg)`
     })
 })
+
+
