@@ -435,59 +435,61 @@ section.contact-hero {
   background-color: black; }
 
 section.contact-title {
-  height: 100vh;
-  display: flex;
-  margin-top: -25%;
+  margin-top: -20%;
   position: relative; }
   section.contact-title h1 {
     font-family: "Trade Gothic";
-    font-size: 31vw;
+    font-size: 36.6vw;
     color: #fff;
     text-transform: uppercase;
-    line-height: 0.9; }
-    section.contact-title h1 span {
-      display: block; }
-  section.contact-title div.contact-page--links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px; }
-    section.contact-title div.contact-page--links span {
-      overflow: hidden; }
-    section.contact-title div.contact-page--links a {
-      color: #999999;
-      font-size: 13px;
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      transition: color 0.3s ease;
-      display: inline-block;
-      transform: translateY(22px); }
-      section.contact-title div.contact-page--links a:hover {
-        color: #fff; }
-  section.contact-title div.dot {
-    width: 80px;
-    height: 80px;
-    background-color: #fc3e17;
-    border-radius: 50%;
-    position: absolute;
-    top: 55%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; }
-  section.contact-title div.dot-2 {
-    width: 80px;
-    height: 80px;
-    background-color: #fc3e17;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-    z-index: 2; }
+    line-height: 0.9;
+    letter-spacing: -5px; }
 
-div.contact-info--wrap {
-  padding: 0 60px; }
-  div.contact-info--wrap div.emoji {
+div.contact-page--links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; }
+  div.contact-page--links span {
+    overflow: hidden; }
+  div.contact-page--links a {
+    color: #999999;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    transform: translateY(22px); }
+    div.contact-page--links a:hover {
+      color: #fff; }
+
+section div.contact-info--wrap {
+  padding: 0 60px;
+  position: relative; }
+  section div.contact-info--wrap div.emoji {
     font-size: 22px;
     margin-bottom: 30px; }
+  section div.contact-info--wrap div.dot {
+    width: 80px;
+    height: 80px;
+    background-color: #fc3e17;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  section div.contact-info--wrap div.dot-2 {
+    width: 80px;
+    height: 80px;
+    background-color: #fc3e17;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30%;
+    left: 10%;
+    z-index: 2; }
+  section div.contact-info--wrap div.contact-info {
+    width: 50%;
+    margin: 0 50%; }
 
 /* =========== Homepage =========== */
 svg.white {
@@ -622,7 +624,7 @@ div.collection span div.project-coming--soon {
   border-radius: 50%;
   text-align: center;
   line-height: 1;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-10deg);
   padding: 30px; }
 
 a.collection-link:hover {

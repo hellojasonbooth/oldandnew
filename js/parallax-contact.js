@@ -1,5 +1,5 @@
 
-const sectionContact = document.querySelector("section.contact-title")
+const sectionContact = document.querySelector("div.contact-info--wrap")
 
 document.addEventListener('scroll', function () {
 

@@ -578,83 +578,89 @@ footer {
 
 
 section.contact-title {
-    height: 100vh;
-    display: flex;
-    margin-top: -25%;
+    // height: 100vh;
+    // display: flex;
+    margin-top: -20%;
     position: relative;
 
         h1 {
-            font-family: $title-font;
-            font-size: 31vw;
-            color: $white-color;
-            text-transform: $uppercase;
+            font-family: "Trade Gothic";
+            font-size: 36.6vw;
+            color: #fff;
+            text-transform: uppercase;
             line-height: 0.9;
+            letter-spacing: -5px;
 
-            span {
-                display: block;
-            }
+            // span {
+            //     display: block;
+            // }
 
-        }
-
-        div.contact-page--links {
-            display: flex;
-            flex-direction: column;
-            margin-top: 60px;
-
-
-            span {
-                overflow: hidden;
-            }
-
-            a {
-                color: $grey-color;
-                font-size: $link-size;
-                text-transform: uppercase;
-                margin-bottom: 5px;
-                transition: color 0.3s ease;
-                display: inline-block;
-                transform: translateY(22px);
-
-                &:hover {
-                    color: $white-color; 
-                }
-            }
-        }
-
-
-
-        div.dot {
-            width: 80px;
-            height: 80px;
-            background-color: $orange-color;
-            border-radius: 50%;
-            position: absolute;
-            top: 55%;
-            right: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-        }
-
-        div.dot-2 {
-            width: 80px;
-            height: 80px;
-            background-color: $orange-color;
-            border-radius: 50%;
-            position: absolute;
-            bottom: 0;
-            left: 10%;
-            z-index: 2;
         }
 
   }
 
-  div.contact-info--wrap {
+  div.contact-page--links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+
+    span {
+        overflow: hidden;
+    }
+
+    a {
+        color: $grey-color;
+        font-size: $link-size;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        transition: color 0.3s ease;
+        display: inline-block;
+        transform: translateY(22px);
+
+        &:hover {
+            color: $white-color; 
+        }
+    }
+}
+
+  section div.contact-info--wrap {
     padding: 0 60px;
+    position: relative;
 
 
     div.emoji {
         font-size: 22px;
         margin-bottom: 30px;
+    }
+
+
+    div.dot {
+        width: 80px;
+        height: 80px;
+        background-color: $orange-color;
+        border-radius: 50%;
+        position: absolute;
+        top: 65%;
+        right: 30%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    div.dot-2 {
+        width: 80px;
+        height: 80px;
+        background-color: $orange-color;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -30%;
+        left: 10%;
+        z-index: 2;
+    }
+
+    div.contact-info {
+        width: 50%;
+        margin: 0 50%;
     }
 
 
@@ -851,7 +857,7 @@ section.contact-title {
         border-radius: 50%;
         text-align: center;
         line-height: 1;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%) rotate(-10deg);
         padding: 30px;
     }
 
