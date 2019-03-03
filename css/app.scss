@@ -504,6 +504,8 @@ footer {
             display: flex;
             align-items: center;
             padding: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         div.profile-info {
@@ -745,7 +747,7 @@ section.contact-title {
 
     div.title-wrap {
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         z-index: 4;
 
         div.title-mask {
@@ -833,6 +835,25 @@ section.contact-title {
 
 
   }
+
+    div.collection span div.project-coming--soon {
+        position: absolute;
+        left: 14px;
+        top: 39%;
+        width: 50px;
+        height: 50px;
+        background-color: #fc3e17;
+        font-size: 8px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+    }
 
     a.collection-link:hover {
         cursor: none;
