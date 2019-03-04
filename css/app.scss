@@ -562,6 +562,12 @@ footer {
 
   }
 
+//   div.parallax-img h2.bg-title {
+//       font-size: 64px;
+//       font-family: $title-font;
+//       text-transform: uppercase;
+//   }
+
 
 
 
@@ -830,6 +836,7 @@ section.contact-title {
         line-height: 1;
 
         transition: letter-spacing 0.8s ease;
+
     }
 
     img {
@@ -863,8 +870,17 @@ section.contact-title {
         padding: 30px;
     }
 
+    a.collection-link h1 {
+        transition: color 0.3s ease;
+    }
+
     a.collection-link:hover {
         cursor: none;
+    }
+
+    a.collection-link:hover h1 {
+        -webkit-text-stroke: 1px $primary-color;
+        color: transparent;
     }
 
     // div.collection img.animated {

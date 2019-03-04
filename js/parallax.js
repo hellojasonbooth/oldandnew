@@ -19,7 +19,8 @@ document.addEventListener('scroll', function () {
     // loop over each parallaxed tag
     parallaxTags.forEach(tag => {
         const speed = parseFloat(tag.getAttribute('data-parallax'))
-        tag.style.transform = `translate(0, ${distanceToSection * speed - 50}%) rotate(6deg)`
+        //tag.style.transform = `translate(0, ${distanceToSection * speed - 50}%) rotate(6deg)`
+        tag.style.transform = `translate(0, ${distanceToSection * speed - 50}%)`
     })
 })
 

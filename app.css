@@ -629,8 +629,15 @@ div.collection span div.project-coming--soon {
   transform: translate(-50%, -50%) rotate(-10deg);
   padding: 30px; }
 
+a.collection-link h1 {
+  transition: color 0.3s ease; }
+
 a.collection-link:hover {
   cursor: none; }
+
+a.collection-link:hover h1 {
+  -webkit-text-stroke: 1px black;
+  color: transparent; }
 
 ul.pagination {
   position: fixed;
