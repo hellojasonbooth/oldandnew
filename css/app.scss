@@ -909,6 +909,7 @@ section.contact-title {
         position: fixed;
         bottom: 40px;
         right: 40px;
+        height: 18px;
     }
 
     footer.home-footer {
@@ -929,4 +930,11 @@ section.contact-title {
         }
 
 
+    }
+
+    div.descriptor {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+        font-size: 12px;
     }

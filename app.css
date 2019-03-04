@@ -656,7 +656,8 @@ ul.pagination {
 div.scroll-icon {
   position: fixed;
   bottom: 40px;
-  right: 40px; }
+  right: 40px;
+  height: 18px; }
 
 footer.home-footer {
   height: 100vh; }
@@ -667,3 +668,9 @@ footer.home-footer {
     justify-content: flex-end; }
     footer.home-footer div.credit span:nth-child(1) {
       margin-right: 8px; }
+
+div.descriptor {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-size: 12px; }
