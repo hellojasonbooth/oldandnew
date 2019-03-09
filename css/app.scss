@@ -674,6 +674,36 @@ section.contact-title {
 
   }
 
+footer.contactpage-footer {
+    height: 100vh;
+    // background-color: #fff;
+}
+
+
+// div.sublogo-wrap {
+//       width: 120px;
+//       height: 120px;
+//       border-radius: 50%;
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+//        -webkit-transform: translate(-50%, -50%);
+//        -ms-transform: translate(-50%, -50%);
+//        transform: translate(-50%, -50%);
+      
+//       cursor: pointer;
+//       pointer-events: none;
+//     //   animation: spin 2.3s linear infinite;
+//     }
+
+
+
+
+
+
+
+
+
 
   /* =========== Homepage =========== */
 
@@ -732,7 +762,7 @@ section.contact-title {
   }
 
   div.cursor.is-active {
-    width: 90px;
+    width: 60px;
     height: 60px;
     // border: solid 1px $grey-color;
     // background-color: $orange-color;

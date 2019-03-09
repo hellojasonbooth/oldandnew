@@ -493,6 +493,9 @@ section div.contact-info--wrap {
     width: 50%;
     margin: 0 50%; }
 
+footer.contactpage-footer {
+  height: 100vh; }
+
 /* =========== Homepage =========== */
 svg.white {
   fill: #fff !important; }
@@ -534,7 +537,7 @@ div.cursor {
       transition: opacity 0.4s ease; }
 
 div.cursor.is-active {
-  width: 90px;
+  width: 60px;
   height: 60px; }
 
 div.main-loader {
