@@ -62,6 +62,176 @@ input, textarea, select {
   font-family: Trade Gothic;
   src: url(fonts/TradeGothic-Bold.woff); }
 
+/* =========== Profile =========== */
+header a.social-about {
+  color: #fff;
+  text-transform: uppercase;
+  transition: color 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1); }
+
+header a.social-about.black {
+  color: black; }
+
+main {
+  background-color: black;
+  color: #fff; }
+
+section.profile-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black; }
+
+section.hero-title {
+  height: 100%;
+  margin-top: -40%; }
+  section.hero-title h1 {
+    font-family: "Trade Gothic";
+    font-size: 50.5vw;
+    color: #fff;
+    text-transform: uppercase; }
+
+section.profile {
+  display: flex;
+  align-items: center;
+  min-height: 100vh; }
+  section.profile .profile-content {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto; }
+  section.profile div.profile-info {
+    width: 50%;
+    margin-left: 50%; }
+    section.profile div.profile-info .info-mask {
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    section.profile div.profile-info .info-mask.animated {
+      animation: mask 0.8s cubic-bezier(0.72, 0, 0.01, 1); }
+    section.profile div.profile-info div.info-wrap {
+      margin-bottom: 32px;
+      position: relative; }
+  section.profile div.parallax-img {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(8deg);
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  section.profile div.parallax-img img {
+    width: 300px; }
+  section.profile div.dot {
+    width: 80px;
+    height: 80px;
+    background-color: #fc3e17;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 80px; }
+
+/* ====== Contact ====== */
+section.contact-hero {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black; }
+
+section.contact-title {
+  margin-top: -20%;
+  position: relative; }
+  section.contact-title h1 {
+    font-family: "Trade Gothic";
+    font-size: 36.6vw;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: -5px; }
+
+div.contact-page--links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px; }
+  div.contact-page--links span {
+    overflow: hidden; }
+  div.contact-page--links a {
+    color: #999999;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    display: inline-block;
+    transform: translateY(22px); }
+    div.contact-page--links a:hover {
+      color: #fff; }
+
+section div.contact-info--wrap {
+  padding: 0 60px;
+  position: relative;
+  max-width: 1400px;
+  margin: auto; }
+  section div.contact-info--wrap div.emoji {
+    font-size: 22px;
+    margin-bottom: 30px; }
+  section div.contact-info--wrap div.dot {
+    width: 80px;
+    height: 80px;
+    background-color: #fc3e17;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2; }
+  section div.contact-info--wrap div.contact-info {
+    width: 50%;
+    margin: 0 50%; }
+
+main.main-contact {
+  margin-bottom: 100vh; }
+
+footer.contactpage-footer {
+  height: 100vh;
+  background-color: #fc3e17;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1; }
+  footer.contactpage-footer div.logo-wrap div.spinner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: none;
+    animation: spin 2.3s linear infinite; }
+  footer.contactpage-footer div.logo-wrap div.face {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: none; }
+  footer.contactpage-footer div.logo-wrap {
+    position: relative;
+    height: 100vh;
+    width: 100vw; }
+
 @keyframes loaderLine {
   0% {
     width: 0%; }
@@ -113,6 +283,12 @@ input, textarea, select {
   100% {
     transform: translateY(0px);
     opacity: 1; } }
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg); }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg); } }
 
 body {
   background-color: #fff;
@@ -355,147 +531,6 @@ footer {
         color: #999999; }
 
 /* =========== Profile =========== */
-header a.social-about {
-  color: #fff;
-  text-transform: uppercase;
-  transition: color 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1); }
-
-header a.social-about.black {
-  color: black; }
-
-main {
-  background-color: black;
-  color: #fff; }
-
-section.profile-hero {
-  min-height: 100vh;
-  width: 100%;
-  background-color: black; }
-
-section.hero-title {
-  height: 100%;
-  margin-top: -40%; }
-  section.hero-title h1 {
-    font-family: "Trade Gothic";
-    font-size: 50.5vw;
-    color: #fff;
-    text-transform: uppercase; }
-
-section.profile {
-  display: flex;
-  align-items: center;
-  min-height: 100vh; }
-  section.profile .profile-content {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 30px;
-    max-width: 1400px;
-    margin: 0 auto; }
-  section.profile div.profile-info {
-    width: 50%;
-    margin-left: 50%; }
-    section.profile div.profile-info .info-mask {
-      height: 100%;
-      width: 100%;
-      background-color: white;
-      position: absolute;
-      right: 0;
-      top: 0; }
-    section.profile div.profile-info .info-mask.animated {
-      animation: mask 0.8s cubic-bezier(0.72, 0, 0.01, 1); }
-    section.profile div.profile-info div.info-wrap {
-      margin-bottom: 32px;
-      position: relative; }
-  section.profile div.parallax-img {
-    width: 50%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) rotate(8deg);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  section.profile div.parallax-img img {
-    width: 300px; }
-  section.profile div.dot {
-    width: 80px;
-    height: 80px;
-    background-color: #fc3e17;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 80px; }
-
-/* ====== Contact ====== */
-section.contact-hero {
-  min-height: 100vh;
-  width: 100%;
-  background-color: black; }
-
-section.contact-title {
-  margin-top: -20%;
-  position: relative; }
-  section.contact-title h1 {
-    font-family: "Trade Gothic";
-    font-size: 36.6vw;
-    color: #fff;
-    text-transform: uppercase;
-    line-height: 0.9;
-    letter-spacing: -5px; }
-
-div.contact-page--links {
-  display: flex;
-  flex-direction: column;
-  margin-top: 60px; }
-  div.contact-page--links span {
-    overflow: hidden; }
-  div.contact-page--links a {
-    color: #999999;
-    font-size: 13px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    transition: color 0.3s ease;
-    display: inline-block;
-    transform: translateY(22px); }
-    div.contact-page--links a:hover {
-      color: #fff; }
-
-section div.contact-info--wrap {
-  padding: 0 60px;
-  position: relative;
-  max-width: 1400px;
-  margin: auto; }
-  section div.contact-info--wrap div.emoji {
-    font-size: 22px;
-    margin-bottom: 30px; }
-  section div.contact-info--wrap div.dot {
-    width: 80px;
-    height: 80px;
-    background-color: #fc3e17;
-    border-radius: 50%;
-    position: absolute;
-    top: 65%;
-    right: 30%;
-    transform: translate(-50%, -50%);
-    z-index: 2; }
-  section div.contact-info--wrap div.dot-2 {
-    width: 80px;
-    height: 80px;
-    background-color: #fc3e17;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -30%;
-    left: 10%;
-    z-index: 2; }
-  section div.contact-info--wrap div.contact-info {
-    width: 50%;
-    margin: 0 50%; }
-
-footer.contactpage-footer {
-  height: 100vh; }
-
 /* =========== Homepage =========== */
 svg.white {
   fill: #fff !important; }

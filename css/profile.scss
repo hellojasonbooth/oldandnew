@@ -1,0 +1,109 @@
+
+/* =========== Profile =========== */
+
+
+
+header a.social-about {
+    color: $white-color;
+    text-transform: $uppercase;
+    transition: color 0.4s 0.2s cubic-bezier(0.72, 0, 0.01, 1);
+}
+
+header a.social-about.black {
+  color: $primary-color;
+}
+
+
+main {
+  background-color: $primary-color; 
+  color: $white-color;
+}
+
+section.profile-hero {
+    min-height: 100vh;
+    width:100%;
+    background-color: $primary-color;
+}
+
+section.hero-title {
+  height: 100%;
+  margin-top: -40%;
+
+      h1 {
+          font-family: $title-font;
+          font-size: 50.5vw;
+          color: $white-color;
+          text-transform: $uppercase;
+      }
+
+}
+
+section.profile {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+
+
+      .profile-content {
+          position: relative;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          padding: 30px;
+          max-width: 1400px;
+          margin: 0 auto;
+      }
+
+      div.profile-info {
+          width: 50%;
+          margin-left: 50%;
+
+          .info-mask {
+              height: 100%;
+              width: 100%;
+              background-color: white;
+              position: absolute;
+              right: 0;
+              top: 0;
+              // transition: width 0.8s 0.3s cubic-bezier(.72,0,.01,1);
+          }
+
+          .info-mask.animated {
+              animation: mask 0.8s cubic-bezier(.72,0,.01,1);
+          }
+
+          div.info-wrap {
+              margin-bottom: 32px;
+              position: relative;
+          }
+
+
+      }
+
+
+      div.parallax-img {
+          width: 50%;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%) rotate(8deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      div.parallax-img img {
+          width: 300px;
+      }
+
+      div.dot {
+          width: 80px;
+          height: 80px;
+          background-color: $orange-color;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          right: 80px;
+      }
+
+}
