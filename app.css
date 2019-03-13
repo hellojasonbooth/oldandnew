@@ -260,13 +260,19 @@ section.collection-title {
     -webkit-backface-visibility: hidden; }
   section.collection-title .first {
     z-index: 99;
-    font-size: 128px;
+    font-size: 132px;
     text-align: center; }
+  section.collection-title p {
+    display: inline-block;
+    overflow: hidden; }
+    section.collection-title p span {
+      transform: translateY(130px);
+      display: inline-block; }
 
 main.collection-grid {
   background-color: transparent;
   position: absolute;
-  margin-top: 100vh; }
+  margin-top: calc(100vh - 120px); }
 
 section.collection-grid--wrap img {
   width: 100%; }
@@ -320,6 +326,13 @@ section.collection-grid--wrap div.col-6.flush {
     opacity: 0; }
   100% {
     transform: translateY(0px) rotate(0deg);
+    opacity: 1; } }
+
+@keyframes jump {
+  0% {
+    transform: translateY(120px); }
+  100% {
+    transform: translateY(0px);
     opacity: 1; } }
 
 @keyframes mask {

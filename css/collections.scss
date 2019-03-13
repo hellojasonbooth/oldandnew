@@ -35,9 +35,20 @@ section.collection-title {
       .first {
         // position: absolute;
         z-index: 99;
-        font-size: 128px;
+        font-size: 132px;
         // width: 100%;
         text-align: center;
+      }
+
+      p {
+        display: inline-block;
+        overflow: hidden;
+
+        span {
+          transform: translateY(130px);
+          display: inline-block;
+        }
+
       }
 }
 
@@ -45,7 +56,7 @@ section.collection-title {
 main.collection-grid {
   background-color: transparent;
   position: absolute;
-  margin-top: 100vh;
+  margin-top: calc(100vh - 120px);
 }
 
 section.collection-grid--wrap {

@@ -29,6 +29,11 @@
     100% {transform: translateY(0px) rotate(0deg); opacity: 1;}
   }
 
+  @keyframes jump {
+    0% {transform: translateY(120px);}
+    100% {transform: translateY(0px); opacity: 1;}
+  }
+
 @keyframes mask {
     0% {width:100%;}
     100% {width:0;}
