@@ -4,8 +4,7 @@ const headerTag = document.querySelector('header')
 
 const loaderTag = document.querySelector('div.loader')
 const loaderMaskTag = document.querySelector('div.loader-mask')
-
-const loaderPageDesc = document.querySelectorAll('div.loader-page--description span p')
+const loaderLineTag = document.querySelector('div.loader-line')
 
 
 // function loader () {
@@ -19,28 +18,37 @@ const loaderPageDesc = document.querySelectorAll('div.loader-page--description s
 
 
 setTimeout(function () { 
+  loaderLineTag.classList.add('animated')
+}, 400)
+
+setTimeout(function () { 
     loaderTag.style.opacity = '0'
 
     headerTag.classList.add('animated')
 
-  }, 1800)
+  }, 1400)
 
 
 
 
-  animateLoaderDesc = function () {
+
+
+
+  //const loaderPageDesc = document.querySelectorAll('div.loader-page--description span p')
+
+  // animateLoaderDesc = function () {
   
-    let delayItems = 0.1
+  //   let delayItems = 0.1
     
     
-    // animate each item
-    loaderPageDesc.forEach(tag => {
+  //   // animate each item
+  //   loaderPageDesc.forEach(tag => {
   
-      tag.style.animation = `fadeup 1s ease-in-out ${delayItems}s both`
-      delayItems = delayItems + 0.1
+  //     tag.style.animation = `fadeup 1s ease-in-out ${delayItems}s both`
+  //     delayItems = delayItems + 0.1
 
-    })
+  //   })
 
-  }
+  // }
 
-  animateLoaderDesc()
+  // animateLoaderDesc()
