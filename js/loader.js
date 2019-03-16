@@ -8,25 +8,20 @@ const loaderLineTag = document.querySelector('div.loader-line')
 
 
 // function loader () {
-
 //     loaderMaskTag.style.transform = 'translateX(0px)'
-
 // }
-
 // loader()
 
 
 
 setTimeout(function () { 
   loaderLineTag.classList.add('animated')
-}, 400)
+}, 500)
 
 setTimeout(function () { 
-    loaderTag.style.opacity = '0'
-
-    headerTag.classList.add('animated')
-
-  }, 1400)
+  loaderTag.style.opacity = '0'
+  headerTag.classList.add('animated')
+}, 1400)
 
 
 

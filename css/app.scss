@@ -113,7 +113,7 @@ div.loader {
             width: 350px;
             height: 160px;
             background-color: black;
-            transition: width 1s cubic-bezier(0.72, 0, 0.01, 1);
+            transition: width 0.8s cubic-bezier(0.72, 0, 0.01, 1);
             // animation: loaderLine 1.6s cubic-bezier(0.72, 0, 0.01, 1);
             // transform: translate(-50%, -50%);
         }
