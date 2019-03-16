@@ -271,7 +271,6 @@ section.collection-title {
 
 main.collection-grid {
   background-color: transparent;
-  position: absolute;
   margin-top: calc(100vh - 120px); }
 
 section.collection-grid--wrap img {
@@ -313,6 +312,9 @@ section.collection-grid--wrap div.col-6 {
 
 section.collection-grid--wrap div.col-6.flush {
   padding: 0; }
+
+footer.collections {
+  height: 100vh; }
 
 @keyframes loaderLine {
   0% {
@@ -394,6 +396,8 @@ div.loader {
   height: 100vh;
   background-color: white;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 999;
   opacity: 1;
   transition: opacity 0.8s ease;

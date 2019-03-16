@@ -55,7 +55,7 @@ section.collection-title {
 
 main.collection-grid {
   background-color: transparent;
-  position: absolute;
+  // position: absolute;
   margin-top: calc(100vh - 120px);
 }
 
@@ -119,4 +119,8 @@ section.collection-grid--wrap {
 
 
 
+}
+
+footer.collections {
+  height: 100vh;
 }
