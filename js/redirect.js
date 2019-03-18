@@ -2,7 +2,7 @@
 
 const redirectLinkOne = document.querySelector('a.collection-link')
 
-redirectTime = "1000"
+redirectTime = "2200"
 redirectURL = "file:///Users/rosannafaithnew/Sites/oldandnew/collections/portugal.html"
 
 function timedRedirect() {

@@ -5,6 +5,7 @@
 const cursorTag = document.querySelector('div.cursor')
 const linkAreas = document.querySelectorAll('section div.collection a.collection-link')
 const cursorTextTags = document.querySelectorAll('div.cursor p span')
+const sectionImgOne = document.querySelector('section div.collection-wrap img.one')
 
 
 // move cursor 
@@ -23,6 +24,8 @@ document.addEventListener('mousemove', function (event) {
 linkAreas.forEach(linkArea => {
 
   let delay = 0.1
+  let delayTitles = 0.1
+  let delayImg = 0.3
 
   linkArea.addEventListener('mouseover', function(){
     growCursor()
@@ -42,6 +45,21 @@ linkAreas.forEach(linkArea => {
       delay = 0.1
     })
   })
+
+const collectionTitleTags = document.querySelectorAll('a.collection-link div.title-wrap span h1 span')
+
+  linkArea.addEventListener('click', function () {
+
+    sectionImgOne.style.animation = `fadeOutImage 1.2s ${delayImg}s both`
+
+    collectionTitleTags.forEach(tag => {
+      tag.style.animation = `fadeOutTitle 1.4s cubic-bezier(.72,0,.01,1) ${delayTitles}s both`
+      delayTitles = delayTitles + 0.15
+    })
+
+  })
+
+
 })
 
 

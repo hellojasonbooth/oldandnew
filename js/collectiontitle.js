@@ -18,3 +18,13 @@
 
 
 //   collectionTitleAnimate()
+
+
+
+
+// const collectionTitleTags = document.querySelectorAll('a.collection-link div.title-wrap span h1 span')
+
+// collectionTitleTags.forEach(tag =>{
+//     tag.style.opacity = 0
+// })
+

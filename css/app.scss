@@ -49,9 +49,19 @@
     100% {transform: translateY(0px)}
 }
 
+@keyframes fadeOutTitle {
+    0% {transform: translateY(0px)}
+    100% {transform: translateY(-180px)}
+}
+
 @keyframes fadeInImage {
     0% {transform: translateY(75vh) rotate(20deg)}
     100% {transform: translateY(0%) rotate(10deg)}
+}
+
+@keyframes fadeOutImage {
+    0% {transform: translateY(0%) rotate(10deg)}
+    100% {transform: translateY(-75vh) rotate(0deg)}
 }
 
 @keyframes date {
@@ -882,6 +892,7 @@ footer {
 
     a.collection-link h1 {
         transition: color 0.3s ease;
+        overflow: hidden;
     }
 
     a.collection-link:hover {
