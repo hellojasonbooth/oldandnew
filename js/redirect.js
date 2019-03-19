@@ -1,14 +1,17 @@
 
-
-const redirectLinkOne = document.querySelector('a.collection-link.first')
-const redirectLinkTwo = document.querySelector('a.collection-link.second')
-
-const redirectTime = "2200"
-const redirectURL = "file:///Users/rosannafaithnew/Sites/oldandnew/collections/portugal.html"
+// redirect link one
+const redirectLinkFirst = document.querySelector('a.collection-link.first')
+const redirectTimeFirst = "2200"
+const redirectURLFirst = "file:///Users/rosannafaithnew/Sites/oldandnew/collections/portugal.html"
 
 function timedRedirect() {
-	setTimeout("location.href = redirectURL",redirectTime)
+	setTimeout("location.href = redirectURLFirst",redirectTimeFirst)
 }
 
-redirectLinkOne.addEventListener('click', timedRedirect)
-redirectLinkTwo.addEventListener('click', timedRedirect)
+redirectLinkFirst.addEventListener('click', timedRedirect)
+
+
+
+
+// const redirectLinkTwo = document.querySelector('a.collection-link.second')
+// redirectLinkTwo.addEventListener('click', timedRedirect)
