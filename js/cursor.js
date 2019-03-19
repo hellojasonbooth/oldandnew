@@ -51,6 +51,7 @@ const collectionTitleTags = document.querySelectorAll('a.collection-link div.tit
   linkArea.addEventListener('click', function () {
 
     sectionImgOne.style.animation = `fadeOutImage 1.2s ${delayImg}s both`
+    // mainHeaderTag.classList.remove('animated')
 
     collectionTitleTags.forEach(tag => {
       tag.style.animation = `fadeOutTitle 1.4s cubic-bezier(.72,0,.01,1) ${delayTitles}s both`
