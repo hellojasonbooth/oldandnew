@@ -255,6 +255,20 @@ section.collection-title {
     display: flex;
     align-items: center;
     overflow: hidden; }
+    section.collection-title div.title-wrap span h1 {
+      font-family: "Trade Gothic";
+      font-size: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: -5px;
+      overflow: hidden;
+      line-height: 1;
+      overflow: hidden;
+      -webkit-text-stroke: 1px black;
+      color: transparent; }
+      section.collection-title div.title-wrap span h1 span {
+        transform: translateY(-174px); }
   section.collection-title div.parallax-title {
     width: 100%;
     -webkit-backface-visibility: hidden; }

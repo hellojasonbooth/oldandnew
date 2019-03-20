@@ -25,6 +25,29 @@ section.collection-title {
         display:  flex;
         align-items: center;
         overflow: hidden;
+
+        span {
+
+          h1 {
+            font-family: $title-font;
+            font-size: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: -5px;
+            overflow: hidden;
+            line-height: 1;
+            overflow: hidden;
+            -webkit-text-stroke: 1px black;
+            color: transparent;
+
+            span {
+              transform: translateY(-174px);
+            }
+
+          }
+
+        }
       }
       
       div.parallax-title {
