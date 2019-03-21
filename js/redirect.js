@@ -1,7 +1,7 @@
 
 // redirect link one
 const redirectLinkFirst = document.querySelector('a.collection-link.first')
-const redirectTimeFirst = "2200"
+const redirectTimeFirst = "1800"
 const redirectURLFirst = "file:///Users/rosannafaithnew/Sites/oldandnew/collections/portugal.html"
 
 function timedRedirect() {

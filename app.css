@@ -369,6 +369,12 @@ footer.collections {
   100% {
     transform: translateY(0px); } }
 
+@keyframes fadeInCollectionTitle {
+  0% {
+    transform: translateY(-175px); }
+  100% {
+    transform: translateY(0px); } }
+
 @keyframes fadeOutTitle {
   0% {
     transform: translateY(0px); }

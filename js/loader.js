@@ -21,7 +21,7 @@ setTimeout(function () {
 setTimeout(function () { 
   loaderTag.style.opacity = '0'
   headerTag.classList.add('animated')
-}, 1400)
+}, 1100)
 
 
 
