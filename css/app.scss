@@ -99,6 +99,10 @@ a {
     text-decoration: none;
 }
 
+a.primary-link {
+    color: $primary-color !important;
+}
+
 
 div.loader {
     width: 100%;
@@ -302,7 +306,7 @@ div.menu {
     a {
         text-align: center;
         color: $primary-color;
-        font-size: 18px;
+        font-size: 22px;
         text-transform: uppercase;
     }
 
@@ -373,11 +377,11 @@ div.menu {
       
       a {
         font-size: $link-size;
-        color: $darkgrey-color;
+        color: $primary-color;
         transition: color 0.3s ease;
 
         &:hover {
-            color: $primary-color; 
+            color: $darkgrey-color;
         }
       }
   }

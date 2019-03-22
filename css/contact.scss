@@ -28,12 +28,13 @@ section.contact-title {
 
   div.contact-page--links {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     margin-top: 60px;
 
 
     span {
         overflow: hidden;
+        margin-right: 20px;
     }
 
     a {
@@ -57,6 +58,7 @@ section.contact-title {
     max-width: 1400px;
     min-height: 100vh;
     margin: auto;
+
 
 
     div.emoji {
@@ -91,6 +93,29 @@ section.contact-title {
     div.contact-info {
         width: 50%;
         margin: 0 50%;
+
+        div.contact-info--summary {
+            margin-bottom: 40px;
+        }
+
+        div.contact-info--summary.highlight {
+            position: relative;
+            margin-bottom: 40px;
+
+        .contact-info--mask {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+            right: 0;
+            top: 0;
+            // transition: width 0.8s 0.3s cubic-bezier(.72,0,.01,1);
+        }
+
+
+
+
+        }
     }
 
 
@@ -104,12 +129,27 @@ section.contact-title {
 }
 
 footer.contactpage-footer {
-    height: 100vh;
+    min-height: 100vh;
     background-color: $orange-color;
     position: fixed;
     bottom: 0;
     left: 0;
     z-index: -1;
+
+    div.credit.alt {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+
+        span:nth-child(1) {
+            margin-right: 8px;
+            color: $primary-color;
+
+            a {
+                color: $primary-color;
+            }
+        }
+    }
 
 
     div.logo-wrap div.spinner {
