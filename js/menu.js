@@ -80,14 +80,14 @@ menuBallTag.addEventListener('click', function () {
   if (menuTag.classList.contains('open')) {
     burgerOneTag.style.transform = 'translateY(3px) rotate(-45deg)'
     burgerTwoTag.style.transform = 'translateY(-3px) rotate(45deg)'
-    instaTag.classList.add('black')
-    logoTag.classList.add('animated')
+    // instaTag.classList.add('black')
+    // logoTag.classList.add('animated')
 
   } else {
     burgerOneTag.style.transform = ''
     burgerTwoTag.style.transform = ''
-    instaTag.classList.remove('black')
-    logoTag.classList.remove('animated')
+    // instaTag.classList.remove('black')
+    // logoTag.classList.remove('animated')
   }
 
   
