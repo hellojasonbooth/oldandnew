@@ -47,6 +47,7 @@ linkAreas.forEach(linkArea => {
   linkArea.addEventListener('click', function () {
   // sectionImgOne.style.animation = `fadeOutImage 1.2s ${delayImg}s both`
     mainHeaderTag.classList.remove('animated')
+    shrinkCursor()
     // headerTag.classList.remove('animated')
   })
 
