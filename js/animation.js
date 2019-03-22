@@ -65,7 +65,7 @@ animatedContactTags.forEach(tag =>{
 
   const infoMaskAnimate = function() {
 
-  infoMaskTag.forEach(tag =>{
+  infoMaskTag.forEach(tag => {
     const tagTop = tag.getBoundingClientRect().top
     const tagBottom = tag.getBoundingClientRect().bottom
 

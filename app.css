@@ -285,7 +285,7 @@ section.collection-title {
 
 main.collection-grid {
   background-color: transparent;
-  margin-top: calc(100vh - 120px); }
+  margin-top: calc(100vh); }
 
 section.collection-grid--wrap img {
   width: 100%; }

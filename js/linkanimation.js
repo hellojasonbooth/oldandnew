@@ -10,12 +10,17 @@ linkFirst.addEventListener('click', function () {
 
 let delayTitle = 0.3
 let delayImg = 0.4
+let delayDate = 1
 
 sectionImgOne.style.animation = `fadeOutImage 1.2s ${delayImg}s both`
 
 collectionTitleFirst.forEach(tag => {
     tag.style.animation = `fadeOutTitle 1.4s cubic-bezier(.72,0,.01,1) ${delayTitle}s both`
     delayTitle = delayTitle + 0.15
+  })
+
+  sectionTitleDate.forEach(tag => {
+   tag.style.animation = `fadeOutTitle 1.4s cubic-bezier(.72,0,.01,1) ${delayDate}s both`
   })
 })
 
