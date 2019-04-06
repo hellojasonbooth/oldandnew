@@ -1,0 +1,24 @@
+{
+  "name": "oldandnew",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellojasonbooth/oldandnew.git"
+  },
+  "author": "Jason Booth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellojasonbooth/oldandnew/issues"
+  },
+  "homepage": "https://github.com/hellojasonbooth/oldandnew#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
