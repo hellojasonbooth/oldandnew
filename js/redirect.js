@@ -2,7 +2,8 @@
 // redirect link one
 const redirectLinkFirst = document.querySelector('a.collection-link.first')
 const redirectTimeFirst = "1500"
-const redirectURLFirst = "file:///Users/rosannafaithnew/Sites/oldandnew/collections/portugal.html"
+const redirectURLFirst = "file:///Users/booth/Sites/oldandnew/collections/portugal.html"
+
 
 function timedRedirect() {
 	setTimeout("location.href = redirectURLFirst",redirectTimeFirst)

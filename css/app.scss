@@ -827,6 +827,7 @@ footer {
             justify-content: center;
             position: relative;
             color: $primary-color;
+            padding: 20px;
         }
     }
 
@@ -870,11 +871,12 @@ footer {
 
     img {
         
-        height: 60vh;
+        height: 52vh;
         will-change: transform;
         z-index: 0;
         transition: transform 0.8s;
         transform: translateY(75vh);
+        opacity: 0.9;
     }
 
 
